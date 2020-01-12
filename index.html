@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: lightgray;
+            padding-top: 4.5%;
+        }
+
+        .container1 {
+            max-width: 1140px;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+            border: gold 1px solid;
+
+        }
+
+        .container2 {
+            max-width: 1140px;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+            border: gold 1px solid;
+
+        }
+
+        .container3 {
+            max-width: 1140px;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+            border: gold 1px solid;
+
+        }
+
+        .container35 {
+            max-width: 1140px;
+            margin: auto;
+            margin-top: 50px;
+            position: relative;
+            border: gold 1px solid;
+
+        }
+
+        .container4 {
+            max-width: 1140px;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+            border: gold 1px solid;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .text-model {
+            width: 100%;
+            height: 30vh;
+
+        }
+
+        /* ************************************************ */
+
+        .navbar {
+            width: 100%;
+            height: 5%;
+            background-color: lightgray;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 998;
+            /* border: gold 1px solid; */
+
+        }
+
+        .nav_contain {
+            position: relative;
+        }
+
+        .nav_btn3 {
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            border: gold 4px solid;
+            border-radius: 50%;
+            position: absolute;
+            right: 3px;
+            top: 2.5px;
+        }
+
+        .nav_btn3:hover {
+            border: coral 4px solid;
+        }
+
+        .nav_btn2 {
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            border: gold 4px solid;
+            border-radius: 50%;
+            position: absolute;
+            right: 43px;
+            top: 2.5px;
+        }
+        .nav_btn2:hover {
+            border: coral 4px solid;
+        }
+
+        .nav_btn1 {
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            border: gold 4px solid;
+            border-radius: 50%;
+            position: absolute;
+            right: 83px;
+            top: 2.5px;
+        }
+        .nav_btn1:hover {
+            border: coral 4px solid;
+        }
+
+
+        .logo {
+            width: 30px;
+            height: 24px;
+            border: gold 2px solid;
+            position: relative;
+            top: 3px;
+            left: 59px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 20vh;
+            background-color: lightgray;
+            background-image: url("/img/p07.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-top: gold 4px solid;
+            border-bottom: gold 4px solid;
+
+        }
+
+
+        .cont-l {
+            width: 50%;
+        }
+
+        .content-selfp01 {
+            width: 100%;
+            height: 30vh;
+            background-image: url("/img/selfp01.jpg");
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-attachment: fixed;
+            transition: 0.5s;
+            border: gold 2px solid;
+
+        }
+
+        .content-selfp01:hover {
+            background-size: contain;
+            background-position: center;
+            width: 1140px;
+            height: 100vh;
+        }
+
+        /* .content-selfp01:hover cont-word{display: none;} */
+
+        .content-selfp02 {
+            height: 30vh;
+            width: 100%;
+            background-image: url("/img/selfp02.jpg");
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-attachment: fixed;
+            transition: 0.3s;
+            border: gold 2px solid;
+
+
+        }
+
+        .content-selfp02:hover {
+            background-size: contain;
+            background-position: center;
+            width: 1140px;
+            height: 100vh;
+        }
+
+        .content-selfp03 {
+            width: 100%;
+            height: 30vh;
+            background-image: url("/img/selfp03.jpg");
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-attachment: fixed;
+            transition: 0.3s;
+            border: gold 2px solid;
+
+        }
+
+        .content-selfp03:hover {
+            background-size: contain;
+            background-position: center;
+            width: 1140px;
+            height: 100vh;
+        }
+
+        .content-selfp04 {
+            width: 100%;
+            height: 30vh;
+            background-image: url("/img/selfp04.jpg");
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-attachment: fixed;
+            transition: 0.3s;
+            border: gold 2px solid;
+
+        }
+
+        .content-selfp04:hover {
+            background-size: contain;
+            background-position: center;
+            width: 1140px;
+            height: 100vh;
+        }
+
+        .content-selfp05 {
+
+            width: 100%;
+            height: 30vh;
+            background-image: url("/img/selfp05.jpg");
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-attachment: fixed;
+            transition: 0.3s;
+            border: gold 2px solid;
+
+        }
+
+        .content-selfp05:hover {
+            background-size: contain;
+            background-position: center;
+            width: 1140px;
+            height: 100vh;
+        }
+
+        .cont-word {
+            width: 50%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 5%;
+            background-color: lightgrey;
+        }
+
+        .footer_text {
+            color: gold;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .word1 {
+
+            padding: 60px;
+
+        }
+
+        .word2 {
+
+            padding: 60px;
+        }
+
+        .word3 {
+
+            padding: 60px;
+        }
+
+        .word4 {
+
+            padding: 60px;
+        }
+
+        .word5 {
+
+            padding: 60px;
+        }
+
+        /* *************************************** */
+
+        .p2T {
+            background-image: url("/img/p02.jpg");
+            background-attachment: fixed;
+            width: 100%;
+            height: 33vh;
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        .p2B {
+            background-image: url("/img/p02.jpg");
+            background-attachment: fixed;
+            width: 100%;
+            height: 33vh;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        .p3T {
+            background-image: url("/img/p02.jpg");
+            background-attachment: fixed;
+            width: 100%;
+            height: 34vh;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mask {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 60%;
+            position: absolute;
+            bottom: -50%;
+            transition: 0.2s;
+            padding: 50px;
+        }
+
+        .p3T:hover .mask {
+            bottom: 0px;
+        }
+
+        .mask span {
+            color: white;
+        }
+
+        /* ************************ */
+
+        .pad {
+            height: 80vh;
+        }
+
+        .block-l {
+            width: 30%;
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            padding-bottom: 50px;
+        }
+
+
+        .block-l-pic img {
+            width: 100%;
+            background-position: center;
+        }
+
+
+        .block-l-word {
+            width: 100%;
+            padding: 20px 10px;
+        }
+
+        .block-c {
+            width: 30%;
+            display: inline-block;
+            position: absolute;
+            left: calc(50% - 15%);
+            top: 0px;
+            padding-bottom: 50px;
+
+        }
+
+        .block-c-pic img {
+            width: 100%;
+        }
+
+        .block-c-word {
+            width: 100%;
+            padding: 20px 10px;
+
+        }
+
+        .block-r {
+            width: 30%;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            padding-bottom: 50px;
+
+        }
+
+        .block-r-pic img {
+            width: 100.0%;
+        }
+
+        .block-r-word {
+            width: 100%;
+            padding: 20px 10px;
+
+        }
+
+        /* ********************************************* */
+
+        .p4T {
+            background-image: url("/img/p05.jpg");
+            background-attachment: fixed;
+            width: 100%;
+            height: 33vh;
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        .p4B {
+            background-image: url("/img/p05.jpg");
+            background-attachment: fixed;
+            width: 100%;
+            height: 33vh;
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        .p5T {
+            background-image: url("/img/p05.jpg");
+            background-attachment: fixed;
+            width: 100%;
+            height: 34vh;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mask {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 60%;
+            position: absolute;
+            bottom: -80%;
+            transition: 0.5s;
+            padding: 30px;
+        }
+
+        .p5T:hover .mask {
+            bottom: 0px;
+        }
+
+        .mask span {
+            color: white;
+        }
+
+        .p07 img {
+            width: 100%;
+        }
+
+        /* *********************** */
+
+        .posi-bar {
+            width: 15px;
+            /* height: 150px; */
+            position: fixed;
+            right: 8px;
+            top: calc(50% - 50px);
+            padding-top: 10px;
+            z-index: 999;
+        }
+
+        .loc1 {
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: gold 2px solid;
+        }
+        .loc1:hover{
+            border: coral 2px solid;
+            width: 20px;
+            height: 20px;
+        }
+
+        .loc2 {
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: gold 2px solid;
+        }
+        .loc2:hover{
+            border: coral 2px solid;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .loc3 {
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: gold 2px solid;
+        }
+        .loc3:hover{
+            border: coral 2px solid;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .loc4 {
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: gold 2px solid;
+        }
+        .loc4:hover{
+            border: coral 2px solid;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .loc5 {
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: gold 2px solid;
+        }
+        .loc5:hover{
+            border: coral 2px solid;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .loc6 {
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            border-radius: 50%;
+            border: gold 2px solid;
+            
+        }
+        .loc6:hover{
+            border: coral 2px solid;
+            width: 20px;
+            height: 20px;
+        }
+
+
+        @media(max-width:768px) {
+            .container1 {
+                width: 100%;
+            }
+
+            .container2 {
+                width: 100%;
+            }
+
+            .container3 {
+                width: 100%;
+            }
+
+            .container35 {
+                width: 100%;
+            }
+
+            .container4 {
+                width: 100%;
+            }
+
+            .content-selfp01:hover {
+                width: 700px;
+
+            }
+
+            .content-selfp02:hover {
+                width: 700px;
+
+            }
+
+            .content-selfp03:hover {
+                width: 700px;
+
+            }
+
+            .content-selfp04:hover {
+                width: 700px;
+
+            }
+
+            .content-selfp05:hover {
+                width: 700px;
+
+            }
+
+            .word1 {
+                padding: 20px;
+                padding-top: 50px;
+
+            }
+
+            .word2 {
+                padding: 20px;
+                padding-top: 50px;
+            }
+
+            .word3 {
+                padding: 20px;
+                padding-top: 50px;
+            }
+
+            .word4 {
+                padding: 20px;
+                padding-top: 50px;
+            }
+
+            .word5 {
+                padding: 20px;
+                padding-top: 50px;
+            }
+
+            .p2T {
+                height: 20vh;
+            }
+
+            .p2B {
+                height: 20vh;
+            }
+
+            .p3T {
+                height: 20vh;
+            }
+
+            .mask {
+                height: 70%;
+                padding: 15px;
+            }
+
+            .p4T {
+                height: 20vh;
+            }
+
+            .p4B {
+                height: 20vh;
+            }
+
+            .p5T {
+                height: 20vh;
+            }
+
+            .mask {
+                padding: 5px;
+            }
+
+            .pad {
+                height: 415vh;
+            }
+
+            .block-l {
+                width: 100%;
+                top: 0px;
+                left: 0px;
+            }
+
+            .block-l-pic img {
+                width: 100%;
+            }
+
+            .block-c {
+                width: 100%;
+                left: 0px;
+                top: 140vh;
+            }
+
+            .block-c-pic img {
+                width: 100%;
+            }
+
+            .block-r {
+                width: 100%;
+                right: 0px;
+                top: 280vh;
+            }
+
+            .block-r-pic img {
+                width: 100.0%;
+            }
+        }
+    </style>
+</head>
+<!-- ******************************* -->
+
+<body>
+    <div class="posi-bar">
+        <a href="#">
+            <div class="loc1"></div>
+        </a>
+        <a href="#loc1">
+            <div class="loc2"></div>
+        </a>
+        <a href="#loc2">
+            <div class="loc3"></div>
+        </a>
+        <a href="#loc3">
+            <div class="loc4"></div>
+        </a>
+        <a href="#loc4">
+            <div class="loc5"></div>
+        </a>
+        <a href="#loc5">
+            <div class="loc6"></div>
+        </a>
+    </div>
+    <div class="navbar">
+        <div class="logo"> <img src="/img/logo01.jpg" alt="">
+        </div>
+        <div class="nav_contanin">
+            <a href="">
+                <div class="nav_btn1"></div>
+            </a>
+            <a href="">
+                <div class="nav_btn2"></div>
+            </a>
+            <a href="">
+                <div class="nav_btn3"></div>
+            </a>
+        </div>
+    </div>
+    <div class="banner">
+    </div>
+    <div id="loc1" class="container1">
+        <div class="cont-l">
+            <div class="content-selfp01"></div>
+            <div class="content-selfp02"></div>
+            <div class="content-selfp03"></div>
+            <div class="content-selfp04"></div>
+            <div class="content-selfp05"></div>
+        </div>
+        <div class="cont-word">
+            <div class="word1 text-model">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius
+                reprehenderit distinctio blanditiis earum autem minima commodi nostrum cumque ullam impedit facilis
+                dignissimos, fuga reiciendis suscipit quas velit animi numquam?</div>
+            <div class="word2 text-model">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente
+                cum in et libero nostrum similique veniam corporis minima, ex eveniet voluptatibus repellendus iste,
+                totam provident doloribus quo cumque maxime!</div>
+            <div class="word3 text-model">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae illum
+                doloribus reprehenderit ea exercitationem quia libero, repellendus ad? Iusto perspiciatis impedit ab eum
+                natus consequatur officia ullam veritatis alias velit!</div>
+            <div class="word4 text-model">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla odio minima
+                officiis quam nam deserunt, harum beatae rem cumque totam quo, voluptatem sint voluptate? Qui eaque
+                atque laudantium. Accusantium, nesciunt.</div>
+            <div class="word5 text-model">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                expedita nihil impedit asperiores et sed ratione fugiat perferendis. Tempore nihil inventore modi autem
+                aliquam temporibus vero explicabo quisquam cupiditate! Veniam!</div>
+        </div>
+    </div>
+    <!-- **************** -->
+    <div id="loc2" class="container2">
+        <div class="p2">
+            <div class="p2T"></div>
+            <div class="p2B"></div>
+        </div>
+        <div class="p3">
+            <div class="p3T">
+                <div class="mask">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore magni, repellendus
+                        dignissimos, modi veritatis quos itaque nostrum similique sequi quam pariatur, eveniet vel quod!
+                        Blanditiis natus eligendi nam minima!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ******************************* -->
+    <div id="loc3" class="container3">
+        <div class="pad"></div>
+        <div class="block-l">
+            <div class="block-l-pic">
+                <img src="/img/f01.jpg" alt="">
+            </div>
+            <div class="block-l-word">
+                <span class="lorem1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam adipisci laudantium sint,
+                    consectetur deleniti quod minus nostrum labore consequatur architecto! Eaque, itaque autem nostrum
+                    minus ea mollitia eligendi cum rerum.</div>
+            </span>
+        </div>
+        <div class="block-c">
+            <div class="block-c-pic">
+                <img src="/img/f02.jpg" alt="">
+
+            </div>
+            <div class="block-c-word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente culpa,
+                blanditiis modi voluptas repellendus porro recusandae delectus necessitatibus fuga sint officiis nostrum
+                quibusdam vitae, nemo neque aperiam animi magnam!</div>
+        </div>
+        <div class="block-r">
+            <div class="block-r-pic">
+                <img src="/img/f03.jpeg" alt="">
+
+            </div>
+            <div class="block-r-word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam facere
+                porro repellendus optio eaque voluptates deserunt harum quaerat dignissimos, minima ut laborum numquam
+                similique, nulla officiis unde eum id!</div>
+        </div>
+    </div>
+    <!-- ************************************* -->
+    <div id="loc4" class="container35">
+        <div class="p4">
+            <div class="p4T"></div>
+            <div class="p4B"></div>
+        </div>
+        <div class="p5">
+            <div class="p5T">
+                <div class="mask">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore magni, repellendus
+                        dignissimos, modi veritatis quos itaque nostrum similique sequi quam pariatur, eveniet vel quod!
+                        Blanditiis natus eligendi nam minima!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loc5" class="container4">
+        <div class="p07">
+            <div class="mask02"></div>
+            <img src="/img/p06.jpg" alt="">
+        </div>
+    </div>
+    <!-- ****************************** -->
+    <div class="footer">
+        <div class="footer_text">本網頁僅供教學及練習使用，若有冒犯請洽0912-461616</div>
+    </div>
+</body>
+
+
+</html>
